@@ -11,7 +11,7 @@ public class ShorterLister {
         JFileChooser chooser = new JFileChooser();
         File selectedFile;
         String rec = "";
-        ArrayList<String> shortWords = new ArrayList<>(); // this array list just read the records of the file
+        ArrayList<String> shortWords = new ArrayList<>(); //This array takes items from the "words" Array and stores them in arraylist.
         ShortWordFilter filter = new ShortWordFilter();
 
         File workingDirectory = new File(System.getProperty("user.dir")); // Can this be outside the try block
@@ -53,7 +53,8 @@ public class ShorterLister {
                 System.out.println("\n\nData file read!");
                 System.out.println("These are short words with less than 5 characters:");
                 for (int x = 0; x < shortWords.size(); x++){
-                    System.out.println(shortWords.get(x));
+                    System.out.println(shortWords.get(x));//This just prints the items that passed the accept() method
+                                                        // which are words that are less than 5 characters.
                 }
 
 
